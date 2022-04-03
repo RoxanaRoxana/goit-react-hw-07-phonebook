@@ -13,7 +13,7 @@ export default function Contacts() {
 
   useEffect(() => {
     dispatch(getContacts());
-  }, []);
+  }, [dispatch]);
 
   const getFilteredContacts = () => {
     return contacts.filter(contact =>
